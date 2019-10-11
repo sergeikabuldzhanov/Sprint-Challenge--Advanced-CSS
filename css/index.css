@@ -161,11 +161,12 @@ p {
   margin: 0 auto;
 }
 .navigation {
+  position: fixed;
+  top: 0;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  background-color: #F6F6F6;
-  color: #454A59;
+  background-color: rgba(246, 246, 246, 0.7);
   border-bottom: 2px solid #F1F1F1;
 }
 .navigation h1 {
@@ -183,6 +184,7 @@ p {
   font-size: 1.6rem;
   text-decoration: none;
   margin: 0 15px;
+  color: #454A59;
 }
 footer {
   color: #22283B;
@@ -193,6 +195,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 100px;
 }
 .home .intro img {
   border-radius: 5px;
