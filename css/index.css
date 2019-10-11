@@ -163,7 +163,6 @@ p {
 .navigation {
   position: fixed;
   top: 0;
-  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   background-color: rgba(246, 246, 246, 0.7);
@@ -264,6 +263,7 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
