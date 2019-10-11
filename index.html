@@ -25,9 +25,35 @@
     <a href="#">About Us</a>
     <a href="#">Blog</a>
     <a href="#">Contact</a>
-    <a href="#">Sign In</a>
+    <button class="open-login" onclick="openForm()">
+      Sign In
+    </button>
   </nav>
  </div>
+
+ <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <div class="button-container">
+      <button type="submit" class="btn-pop">Login</button>
+      <button type="button" class="btn-pop cancel" onclick="closeForm()">Close</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
 
   <div class="container home">
 
